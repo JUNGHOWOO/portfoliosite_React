@@ -3,13 +3,13 @@
 
 /* CSS style */
 :root {
+    --header-height: 3rem;
     /* 컬러 설정 */
     /* 컬러 모드 hsl(hue, saturation, lightness) */
-    --header-height: 3rem;
     --hue: 0;
     --sat: 0%;
     --title-color: hsl(var(--hue), var(--sat), 20%);
-    --title-color-dark: hsl(var(hue), var(--sat), 0%);
+    --title-color-dark: hsl(var(--hue), var(--sat), 0%);
     --text-color: hsl(var(--hue), var(--sat), 46%);
     --body-color: hsl(var(--hue), var(--sat), 98%);
     --container-color: #fff;
@@ -78,7 +78,7 @@ textarea {
 }
 
 body {
-    border-color: var(--body-color);
+    background-color: var(--body-color);
     color: var(--text-color);
 }
 
@@ -182,13 +182,20 @@ img {
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
+    body {
+        margin:  0 0 var(--header-height) 0;
+    }
+
     .section {
         padding: 2rem 0 4rem;
     }
+
+    .section__subtitle {
+        margin-bottom: var(--mb-3);
+    }
 }
 
-@media screen and (max-width: 576px) {
-    
+@media screen and (max-width: 576px) { 
 }
 
 /* for small devices */
@@ -196,7 +203,6 @@ img {
 :root{
     --big-font-size: 2.25rem;
 }
-
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
