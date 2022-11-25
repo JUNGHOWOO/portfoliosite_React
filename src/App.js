@@ -6,6 +6,10 @@ import About from './components/about/About.jsx';
 import Skills from './components/skills/Skills';
 import Services from './components/services/Services';
 import Qualification from './components/qualification/Qualification';
+import Testimonials from './components/testmonials/Testimonials';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import ScrollUp from './components/scrollup/ScrollUp';
 
 const App = () => {
     return (
@@ -17,7 +21,11 @@ const App = () => {
             <Skills />
             <Services />
             <Qualification />
+            <Testimonials />
+            <Contact />
         </main>
+        <Footer />
+        <ScrollUp />
         </>
     )
 }
