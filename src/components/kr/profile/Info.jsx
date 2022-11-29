@@ -13,13 +13,13 @@ const Info = () => {
             <div className="profile__box">
                 <i className="bx bxs-select-multiple profile__icon"></i>
                 <h3 className="profile__title">{profileKr.title2}</h3>
-                <span className="profile__subtitle">d{profileKr.subtitle2}</span>
+                <span className="profile__subtitle">{profileKr.subtitle2}</span>
             </div>  
 
             <div className="profile__box">
                 <i className="bx bxs-downvote profile__icon"></i>
                 <h3 className="profile__title">{profileKr.title3}</h3>
-                <span className="profile__subtitle">not {profileKr.subtitle3}</span>
+                <span className="profile__subtitle">{profileKr.subtitle3}</span>
             </div>  
         </div>
     )

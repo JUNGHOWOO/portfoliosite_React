@@ -3,11 +3,14 @@
 
 /* CSS style */
 :root {
+    --header-height: 3rem;
     /* 구글폰트 설정 */
     --indie: Indie Flower;
     --roboto: Roboto slab;
+    --don: Dongle;
 
-    --header-height: 3rem;
+    --nanum: Nanum Gothic;
+    
     /* 컬러 설정 */
     /* 컬러 모드 hsl(hue, saturation, lightness) */
     --hue: 0;
@@ -144,7 +147,7 @@ img {
 }
 
 /* buttons */
-.button {
+ .button {
     display: inline-block;
     background-color: var(--title-color);
     color: var(--container-color);
@@ -164,7 +167,19 @@ img {
 .button--flex {
     display: inline-flex;
     align-items: center;
-}
+    -webkit-transform: perspective(2px) translateZ(0);
+    transform: perspective(2px) translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  
+  .button--flex:hover, 
+  .button--flex:focus, 
+  .button--flex:active {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
 
 /* breakpoints */
 /* for large devices */

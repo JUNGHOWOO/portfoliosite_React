@@ -21,8 +21,9 @@ const Profile = () => {
                     {profileKr.description}
                     </p>
 
-                    <a download="" href={CV} className="button button--flex">
+                    <a download="" href={CV} className="button button--flex"><span>
                     {profileKr.button}&nbsp;&nbsp;<i class="bx bxs-note bx-flip-horizontal bx-tada"></i>
+                    </span>
                     </a>
                 </div>
             </div>

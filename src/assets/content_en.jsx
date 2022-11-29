@@ -199,8 +199,8 @@ export const contactEn =
       tag3: "Content",
       place3: "Please enter the contents",
 
-      button: "Send Message",
-      button2: "Send"
+      button1: "Send",
+      button2: "Send Message"
     }
 
 /* footer */
