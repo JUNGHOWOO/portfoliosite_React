@@ -6,7 +6,7 @@ import Proflie from '../components/en/profile/Profile.jsx';
 import Skills from '../components/en/skills/Skills';
 import Experience from '../components/en/experience/Experience';
 import Timeline from '../components/en/timeline/Timeline';
-/* import Portfolio from '../components/en/portfolio/Portfolio'; */
+import Portfolio from '../components/en/work/Portfolio';
 /* import Etc from '../components/en/etc/Etc'; */
 import Contact from '../components/en/contact/Contact';
 import Footer from '../components/en/footer/Footer';
@@ -22,7 +22,7 @@ const English = () => {
                         <Proflie />
                         <Timeline />
                         <Skills />
-                        {/* <Portfolio /> */}
+                        <Portfolio />
                         <Experience />
                         {/* <Etc /> */}
                         <Contact />

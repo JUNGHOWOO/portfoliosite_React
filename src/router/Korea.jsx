@@ -6,7 +6,7 @@ import Proflie from '../components/kr/profile/Profile.jsx';
 import Skills from '../components/kr/skills/Skills';
 import Experience from '../components/kr/experience/Experience';
 import Timeline from '../components/kr/timeline/Timeline';
-/* import Portfolio from '../components/kr/portfolio/Portfolio'; */
+import Portfolio from '../components/kr/work/Portfolio';
 /* import Etc from '../components/kr/etc/Etc'; */
 import Contact from '../components/kr/contact/Contact';
 import Footer from '../components/kr/footer/Footer';
@@ -22,7 +22,7 @@ const Korea = () => {
                         <Proflie />
                         <Timeline />
                         <Skills />
-                        {/* <Portfolio /> */}
+                        <Portfolio />
                         <Experience />
                         {/* <Etc /> */}
                         <Contact />
