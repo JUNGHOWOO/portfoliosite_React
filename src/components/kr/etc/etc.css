@@ -1,0 +1,62 @@
+.etc__container {
+    width: 750px;
+}
+
+.etc__card {
+    background-color: var(--container-color);
+    border: 1px solid rbga(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+
+.etc__img {
+    width: 60px;
+    border-radius: 3rem;
+    margin-bottom: var(--mb-1);
+}
+
+.etc__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+}
+
+.etc__description {
+    font-size: var(--small-font-size);
+}
+
+/* swiper class */
+.swiper-pagination-bullet {
+    background-color: var(--text-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--title-color) !important;
+}
+
+/* breakpoints */
+/* for large devices */
+@media screen and (max-width: 992px) {
+    .etc__container {
+        width: initial;
+    }
+
+    .etc__card {
+        padding: 1.25rem 1.5rem;
+    }
+}
+
+/* for medium devices */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) { 
+}
+
+/* for small devices */
+@media screen and (max-width: 350px) {
+
+
+}

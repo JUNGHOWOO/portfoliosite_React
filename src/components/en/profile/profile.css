@@ -1,0 +1,93 @@
+.profile__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.profile__img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.profile__info {
+    grid-template-columns: repeat(3, 140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.profile__box {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.profile__icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+}
+
+.profile__title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.profile__subtitle {
+    font-size: var(--tiny-font-size);
+}
+
+.profile__description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2-5);
+}
+
+/* breakpoints */
+/* for large devices */
+@media screen and (max-width: 992px) {
+    .profile__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5em;
+    }
+
+    .profile__img {
+        width: 220px;
+    }
+
+    .profile__box {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .profile__data {
+        text-align: center;
+    }
+
+    .profile__info {
+        justify-content: center;
+    }
+
+    .profile__description {
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* for medium devices */
+@media screen and (max-width: 576px) {
+    .profile__info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .profile__description {
+        padding: 0;
+    }
+}
+
+/* for small devices */
+@media screen and (max-width: 350px) {
+    .profile__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

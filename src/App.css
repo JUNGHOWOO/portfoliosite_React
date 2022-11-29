@@ -1,8 +1,12 @@
 /* 구글 폰트 삽입: Poppins, Nanum Gothic */
-@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&family=Nanum+Gothic:wght@700;800&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&family=Nanum+Gothic:wght@700;800&family=Poppins:wght@400;500;600&family=Roboto+slab:wght@500;600;700;800&&display=swap");
 
 /* CSS style */
 :root {
+    /* 구글폰트 설정 */
+    --indie: Indie Flower;
+    --roboto: Roboto slab;
+
     --header-height: 3rem;
     /* 컬러 설정 */
     /* 컬러 모드 hsl(hue, saturation, lightness) */
@@ -11,7 +15,7 @@
     --title-color: hsl(var(--hue), var(--sat), 20%);
     --title-color-dark: hsl(var(--hue), var(--sat), 0%);
     --text-color: hsl(var(--hue), var(--sat), 46%);
-    --body-color: hsl(var(--hue), var(--sat), 98%);
+    --body-color: hsl(var(--hue), var(--sat), 97%);
     --container-color: #fff;
 
     /* 글자 폰트 */
