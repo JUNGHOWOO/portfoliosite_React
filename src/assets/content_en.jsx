@@ -120,7 +120,7 @@ export const skillEn =
     }
 
 /* portpolio */
-export const portpolioEn = 
+export const portfolioEn = 
     {
       title: "Portfolio",
       subtitle: "My projects",
