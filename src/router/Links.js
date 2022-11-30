@@ -2,13 +2,17 @@ import { Link } from "react-router-dom"
 
 export default function Links() {
   return (
-    <div>
-      <button className='btn__kr'>
-        <Link to="/kr">korea</Link>
-        </button> <br />
-        <button className='btn__kr'>
-        <Link to="/en">english</Link>
-        </button>
+    <>
+    <div className="btn_kr">
+      <a><Link to="/kr">korea</Link></a>
+    </div> 
+
+    <br />
+
+    <div className="btn_en">
+      <a><Link to="/en">english</Link></a>
     </div>
+    </>
+    
   )
 }

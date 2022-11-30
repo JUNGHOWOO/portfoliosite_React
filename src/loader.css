@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+.btn_kr {
+  background-color: #fff;
+  color: #fff;
+}
+
+.btn_kr .a {
+  width: 300px;
+}
+
+.btn_en {
+  background-color: #fff;
+  color: #fff;
+}
+
+.box{
+  display: inline-block;
+  height: 950px;
+  width: 100%;
+  float:left;
+  position: relative;
+  /*margin:0 -4px -5px -2px;*/
+  transition: all .2s ease;
+}
+
+.box p{
+  font-family: var(--indie);
+  font-weight: 300;
+  position: absolute;
+  font-size: 20px;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  bottom: 0px;
+  margin: 0;
+  top:300px;
+  background-color: #fff;
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.box:hover p{
+  bottom:0px;
+  top:300px;
+  opacity: 1;
+  transition: all .2s ease;
+  z-index: 2;
+}
+
+
+/* -------------- loader6 -------------- */
+.loader6{
+    position: relative;
+    width: 12px;
+    height: 12px;
+  
+    top: 46%;
+    top: -webkit-calc(50% - 6px);
+    top: calc(50% - 6px);
+    left: 46%;
+    left: -webkit-calc(50% - 6px);
+    left: calc(50% - 6px);
+    
+    border-radius: 12px;
+    background-color: rgba(255, 34, 34, 0.955);
+    
+    -webkit-transform-origin:  50% 50%;
+        transform-origin:  50% 50% ;
+    -webkit-animation: loader6 .5s ease-in-out infinite;
+        animation: loader6 .5s ease-in-out infinite;
+  }
+  
+  .loader6:before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: -25px;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+  }
+  
+  .loader6:after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 25px;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+  }
+  
+  @-webkit-keyframes loader6{
+      0%{-webkit-transform:rotate(0deg);}
+      50%{-webkit-transform:rotate(180deg);}
+      100%{-webkit-transform:rotate(180deg);}
+  }
+  
+  @keyframes loader6{
+      0%{transform:rotate(0deg);}
+      50%{transform:rotate(180deg);}
+      100%{transform:rotate(180deg);}
+  }
