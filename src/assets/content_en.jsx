@@ -1,4 +1,11 @@
 /* ========영문 내용============= */
+import Work1 from "./RAIN.png"
+import Work2 from "./COMM.png"
+import Work3 from "./DB.png"
+import Work4 from "./RMS.png"
+import Work5 from "./ALERT.png"
+import Work6 from "./PORT.png"
+
 /* header */
 export const navEn = 
     {
@@ -124,19 +131,67 @@ export const portfolioEn =
     {
       title: "Portfolio",
       subtitle: "My projects",
-      menu1: "All",
-      menu2: "Full",
-      menu3: "Front",
-      menu4: "Back",
-      menu5: "Etc",
-      title1: "Death Traffic Accidents in Precipitation",
-      title2: "Commercial Area Analysis",
-      title3: "AirBNB Database Reverse Enginnering",
-      title4: "Company Request Management System",
-      title5: "Intrusion Prevention System",
-      title6: "Portfolio site",
       button: "Detail",
     }
+
+
+    
+    export const projectsData = [
+        {
+          id: 1,
+          image: Work1,
+          title: "Death Traffic Accidents in Precipitation",
+          category: "Etc",
+        },
+        {
+          id: 2,
+          image: Work2,
+          title: "Commercial Area Analysis",
+          category: "Etc",
+        },
+        {
+          id: 3,
+          image: Work3,
+          title: "AirBNB Database Reverse Enginnering",
+          category: "Back",
+        },
+        {
+          id: 4,
+          image: Work4,
+          title: "Company Request Management System",
+          category: "Full",
+        },
+        {
+          id: 5,
+          image: Work5,
+          title: "Intrusion Prevention System",
+          category: "Etc",
+        },
+        {
+            id: 6,
+            image: Work6,
+            title: "Portfolio site",
+            category: "Front",
+          },
+      ];
+    
+export const projectsNav = [
+        {
+            name: 'All',
+        },
+        {
+            name: 'Full',
+        },
+        {
+            name: 'Front',
+        },
+        {
+            name: 'Back',
+        },
+        {
+            name: 'Etc',
+        },
+      ]
 
 
 /* experience */

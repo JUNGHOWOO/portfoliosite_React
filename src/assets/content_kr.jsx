@@ -1,4 +1,11 @@
 /* ========한글 내용============= */
+import Work1 from "./RAIN.png"
+import Work2 from "./COMM.png"
+import Work3 from "./DB.png"
+import Work4 from "./RMS.png"
+import Work5 from "./ALERT.png"
+import Work6 from "./PORT.png"
+
 /* header */
 export const navKr = 
     {
@@ -120,23 +127,69 @@ export const skillKr =
     }
 
 /* portpolio */
-export const portpolioKr = 
+export const portfolioKr = 
     {
       title: "포트폴리오",
       subtitle: "나의 프로젝트",
-      menu1: "모두",
-      menu2: "풀스택",
-      menu3: "프론트",
-      menu4: "백",
-      menu5: "기타",
-      title1: "강수 사망교통사고 분석",
-      title2: "C명동 상권 분석",
-      title3: "에어비앤비 데이터베이스 리버스 엔지니어링",
-      title4: "사내 요청 관리 시스템",
-      title5: "침입방지 시스템",
-      title6: "포트폴리오 사이트",
       button: "자세히",
     }
+
+export const projectsData = [
+      {
+        id: 1,
+        image: Work1,
+        title: "강수 사망교통사고 분석",
+        category: "기타",
+      },
+      {
+        id: 2,
+        image: Work2,
+        title: "명동 상권 분석",
+        category: "기타",
+      },
+      {
+        id: 3,
+        image: Work3,
+        title: "에어비앤비 데이터베이스 리버스 엔지니어링",
+        category: "백엔드",
+      },
+      {
+        id: 4,
+        image: Work4,
+        title: "사내 요청 관리 시스템",
+        category: "풀스택",
+      },
+      {
+        id: 5,
+        image: Work5,
+        title: "침입방지 시스템",
+        category: "기타",
+      },
+      {
+          id: 6,
+          image: Work6,
+          title: "포트폴리오 사이트",
+          category: "프론트엔드",
+        },
+    ];
+  
+export const projectsNav = [
+      {
+          name: '모두',
+      },
+      {
+          name: '풀스택',
+      },
+      {
+          name: '프론트엔드',
+      },
+      {
+          name: '백엔드',
+      },
+      {
+          name: '기타',
+      },
+    ]
 
 
 /* experience */
