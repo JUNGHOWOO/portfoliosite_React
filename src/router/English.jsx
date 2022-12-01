@@ -12,11 +12,13 @@ import Contact from '../components/en/contact/Contact';
 import Footer from '../components/en/footer/Footer';
 import ScrollUp from '../components/en/scrollup/ScrollUp';
 import Changelang from '../components/en/changelang/Changelang';
+import Animation from '../components/en/animation/Animation';
 
 const English = () => {
     return (
         <>
                 <Header />
+                <Animation />
                     <Home />
                         <main className='main'>
                         <Proflie />

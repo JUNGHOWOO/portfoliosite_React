@@ -5,6 +5,7 @@ import Data from "./Data";
 import ScrollDown from './scrollDown';
 
 const Home = () => {
+
     return (
         <section className="home section" id="home">
             <div className="home__container container grid">

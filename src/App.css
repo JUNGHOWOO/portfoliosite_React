@@ -8,7 +8,6 @@
     --indie: Indie Flower;
     --roboto: Roboto slab;
     --don: Dongle;
-
     --nanum: Nanum Gothic;
     
     /* 컬러 설정 */
@@ -18,10 +17,11 @@
     --title-color: hsl(var(--hue), var(--sat), 20%);
     --title-color-dark: hsl(var(--hue), var(--sat), 0%);
     --text-color: hsl(var(--hue), var(--sat), 46%);
-    --body-color: hsl(var(--hue), var(--sat), 97%);
+    --body-color: black;
     --container-color: #fff;
 
     /* 글자 폰트 */
+    --body-font: var(--don);
     --big-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -80,16 +80,22 @@ body,
 button,
 input,
 textarea {
-    font-family: var(--body-font);
+    font-family: var(--roboto);
     font-size: var(--normal-font-size);
 }
 
 body {
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: .3s;
+}
+
+.scroll-body {
+    background-color: hsl(var(--hue), var(--sat), 96%);
 }
 
 h1, h2, h3 {
+    font-family: var(--roboto);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }

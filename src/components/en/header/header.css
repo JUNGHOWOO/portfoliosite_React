@@ -4,7 +4,9 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--container-color); /* body-color */
+    background-color: black;
+    transition: .3s;
+    box-shadow: 0 -1px 4px rgb(182, 182, 182);
 }
 
 .nav {
@@ -22,7 +24,7 @@
 
 .nav__logo,
 .nav__toggle {
-    color: var(--title-color);
+    color: hsl(var(--hue), var(--sat), 70%);
     font-weight: var(--font-medium);
 }
 
@@ -32,13 +34,33 @@
 }
 
 .nav__link {
+    font-family: var(--don);
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
-    color: var(--title-color);
+    font-size: 25px;
+    color: hsl(var(--hue), var(--sat), 70%);
     font-weight: var(--font-medium);
     transition: .3s;
+}
+
+/* 버튼 애니메이션 */
+    
+.nav__link:before{
+    content : '';
+    position: absolute;  /*before를 절대위치*/
+    background-color: #840037;
+    height: 2px;
+    width : 0;
+    bottom: -10px;       /*bottom을 주어, 글자 밑에 위치시킴*/       
+    transition: 0.5s;    /*가상클래스에 이벤트 발생시 시간 지정*/ 
+    left : 50%;         /*만약 왼쪽에서부터 커지게하려면-> left를 0으로 두면 됨*/
+    transform: translateX(-50%);
+}
+    
+.nav__link:hover:before{ /*hover시 width:0 -> 100%가 됨*/
+    width : 100%;
 }
 
 .nav__icon,
@@ -50,13 +72,33 @@
 /* avtive link */
 .active-link,
 .nav__link:hover {
-    color: var(--title-color-dark);
+    color: #FDB731;
 }
 
 /* change background header */
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--container-color); /* body-color */
+    transition: .3s;
 }
+
+.scroll-logo {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+
+.scroll-link {
+    font-family: var(--don);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.scroll-avtive-link {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
 
 /* breakpoints */
 /* for medium devices */
@@ -107,13 +149,19 @@
     }
 
     .nav__close:hover {
-        color: var(--title-color-dark);
+        color:#840037;
     }
 
     .nav__toggle {
         font-style: 1.1rem;
         cursor: pointer;
     }
+
+.nav__toggle:hover {
+        color: aliceblue;
+    }
+
+
 
     .nav__icon,
     .nav__close,

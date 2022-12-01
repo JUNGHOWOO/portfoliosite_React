@@ -6,9 +6,21 @@ const Header = () => {
     /* change background header */
     window.addEventListener("scroll", function() {
         const header = this.document.querySelector(".header");
+        const logo = this.document.querySelector(".nav__logo");
+        const link = this.document.querySelector(".nav__link");
+        const active = this.document.querySelector(".avtice-link");
         /* when the scroll is higher than 2000 viewport height, add the show scroll-header to a tag withe the header tag  */
-        if (this.scrollY >= 560) header.classList.add("scroll-header");
-        else header.classList.remove("scroll-header");
+        if (this.scrollY >= 672) {
+            header.classList.add("scroll-header");
+            logo.classList.add("scroll-logo");
+            link.classList.add("scroll-link");
+            link.classList.add("scroll-avtice-link");
+        } else {
+            header.classList.remove("scroll-header");
+            logo.classList.remove("scroll-logo");
+            link.classList.remove("scroll-link");
+            link.classList.remove("scroll-avtice-link");
+        }
     })
     /* Toggle menu */
     const[Toggle, showMenu] = useState(false);

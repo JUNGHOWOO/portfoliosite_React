@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&family=Nanum+Gothic:wght@700;800&family=Poppins:wght@400;500;600&family=Roboto+slab:wght@500;600;700;800&&display=swap");
 
+
 .home__container {
     row-gap: 7rem;
 }
@@ -73,7 +74,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 1px rgb(255 255 255 /30%);
+    box-shadow: inset 0 0 0 3px rgb(255 255 255 /30%);
     order: 1;
     justify-self: center;
     width: 300px;
@@ -164,7 +165,7 @@
     .home__img {
         width: 250px;
         height: 250px;
-        box-shadow: inset 0 0 0 8px rgb(255 255 255 /30%);
+        box-shadow: inset 0 0 0 2px rgb(255 255 255 /30%);
     }
 
     .home__scroll {
@@ -189,7 +190,7 @@
     }
 
     .home__img {
-        box-shadow: inset 0 0 0 6px rgb(255 255 255 /30%);
+        box-shadow: inset 0 0 0 1px rgb(255 255 255 /30%);
         width: 200px;
         height: 200px;
     }

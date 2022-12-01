@@ -102,7 +102,7 @@
     left: 1.25rem;
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
-    background-color: var(--body-color);
+    background-color: hsl(var(--hue), var(--sat), 96%);
     z-index: 10;
 }
 

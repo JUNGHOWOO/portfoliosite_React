@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.animation {
+  font-family: Arial;
+  height: 1000px;
+  transition: .3s;
+}
+
+.scroll-body {
+    background: hsl(var(--hue), var(--sat), 97%);
+    font-family: Arial;
+    height: 1000px;
+    transition: .3s;
+} 
+
+.ani__container {
+  display: flex;
+/*   border:1px solid red; */
+  height:90%;
+  align-items: center;
+}
+
+.ani__svg {
+    display: block;
+    font: 9.5em 'Montserrat';
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/* mouse */
+.home__scroll {
+  margin-left: 9.25rem;
+}
+
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateY(0);
+  }
+
+  3% {
+      transform: translateY(3.75rem);
+  }
+}
+
+.home__scroll-name {
+  color: #b3b3b3;
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+  margin-left: 2px;
+}
+
+.home__scroll-arrow {
+  font-style: 1.25rem;
+  color:#b3b3b3
+}
+
+/* breakpoints */
+/* for large devices */
+@media screen and (max-width: 992px) {
+  .home__scroll {
+      margin-left: 7.5rem;
+  }
+}
+
+/* for medium devices */
+@media screen and (max-width: 768px) {
+  .home__scroll {
+      display: none;
+  }
+}

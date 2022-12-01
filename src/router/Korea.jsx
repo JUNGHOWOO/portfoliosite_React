@@ -12,11 +12,13 @@ import Contact from '../components/kr/contact/Contact';
 import Footer from '../components/kr/footer/Footer';
 import ScrollUp from '../components/kr/scrollup/ScrollUp';
 import Changelang from '../components/kr/changelang/Changelang';
+import Animation from '../components/kr/animation/Animation';
 
 const Korea = () => {
     return (
         <>
                 <Header />
+                <Animation />
                     <Home />
                         <main className='main'>
                         <Proflie />
