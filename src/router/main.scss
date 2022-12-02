@@ -1,0 +1,408 @@
+$colors: (
+    background: black,
+    text: #eee
+);
+
+$font: (
+    family: sans-serif,
+    size: 30px,
+    letter-spacing: 0
+);
+
+$config: (
+    animated: false,
+    nb-letters: 16,
+    animation-length: 6s,
+    mask-letters: ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
+);
+
+// ----------------------------------
+
+@function color($value) {
+    @return map-get($colors, $value);
+}
+
+@function font($value) {
+    @return map-get($font, $value);
+}
+
+@function config($value) {
+    @return map-get($config, $value);
+}
+
+@function random-string($list) {
+    $result: null;
+
+    @for $i from 1 through length($list) {
+        $random: random(length($list));
+        $current: nth($list, $random);
+        $list: remove-nth($list, $random);
+        $result: $result#{$current};
+    }
+
+    @return $result;
+}
+
+@function remove-nth($list, $index) {
+    $result: ();
+
+    @for $i from 1 through length($list) {
+        @if $i !=$index {
+            $result: append($result, nth($list, $i));
+        }
+    }
+
+    @return $result;
+}
+
+@mixin respond-to($breakpoint) {
+    @if type-of($breakpoint)==list {
+        @media (min-width: nth($breakpoint, 1)) and (max-width: nth($breakpoint, 2)) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+// ----------------------------------
+/* body {
+    text-align: center;
+    background-color: rgb(126, 111, 111);
+} */
+
+.wrapper {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    bottom: 8%;
+    width: 100%;
+    font-size: 16px;
+    transform: translate(-50%);
+    background-color: rgb(81, 159, 155);
+}
+
+.letter {
+    width: font(size);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    margin: 0 ceil(font(letter-spacing) / 2);
+    font-family: font(family);
+    font-size: font(size);
+    font-weight: 600;
+    line-height: font(size);
+    color: color(text);
+
+    @include respond-to(625px) {
+        //font-size: 16px;
+        //width: 18px;
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        word-break: break-all;
+        background-color: color(background);
+    }
+}
+
+// ----------------------------------
+
+@for $i from 1 through config(nb-letters) {
+    $length: length(config(mask-letters));
+    $random: random($length);
+    $steps: $random - 1;
+    $offset: font(size) * $steps * -1;
+    $delay: random(100) / 100;
+    $duration: $steps * (config(animation-length) / $random);
+
+    .letter:nth-child(#{$i}):before {
+        content: quote(random-string(config(mask-letters)));
+        margin-top: $offset;
+        animation-name: letter#{$i};
+        animation-duration: $duration - ($duration * $delay);
+        animation-delay: $delay * 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes letter#{$i} {
+        from {
+            margin-top: $offset;
+        }
+
+        to {
+            margin-top: font(size);
+        }
+    }
+}
+
+//----------------------
+.center-outer {
+    display: table;
+    width: 100%;
+}
+
+.center-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bubbles {
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    border: 11px solid #fff;
+    background-color: #fbdf24;
+    margin-top: 130px;
+}
+
+.bubbles span {
+    position: relative;
+    margin: 2.5em 0 0;
+    color: rgb(255, 255, 255);
+}
+
+.individual-bubble {
+    position: absolute;
+    border-radius: 100%;
+    bottom: -10px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+// -----------------------
+
+.wrapper .footer {
+    height: 30px;
+}
+
+
+/* breakpoints */
+/* for medium devices */
+@media screen and (max-width: 768px) {
+    .letter {
+        width: font(size);
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        overflow: hidden;
+        margin: 0 ceil(font(letter-spacing) / 2);
+        font-family: font(family);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: font(size);
+        color: color(text);
+
+        @include respond-to(625px) {
+            //font-size: 16px;
+            //width: 18px;
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            word-break: break-all;
+            background-color: color(background);
+        }
+    }
+
+    .bubbles {
+        display: inline-block;
+        font-family: arial;
+        position: relative;
+        height: 200px;
+        border: 10px solid #fff;
+    }
+
+    .bubbles span {
+        position: relative;
+        margin: 2em 0 0;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .letter {
+        width: font(size);
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        overflow: hidden;
+        margin: 0 ceil(font(letter-spacing) / 2);
+        font-family: font(family);
+        font-size: 15px;
+        font-weight: 600;
+        line-height: font(size);
+        color: color(text);
+
+        @include respond-to(625px) {
+            //font-size: 16px;
+            //width: 18px;
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            word-break: break-all;
+            background-color: color(background);
+        }
+    }
+
+    .bubbles {
+        display: inline-block;
+        font-family: arial;
+        position: relative;
+        height: 200px;
+        border: 10px solid #fff;
+    }
+
+    .bubbles span {
+        position: relative;
+        margin: 2.5em 0 0;
+        color: #fff;
+    }
+}
+
+/* for small devices */
+@media screen and (max-width: 350px) {}
+
+
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$openSans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+body {
+    background: #333;
+    font-family: $openSans;
+}
+
+.buttons {
+    margin-top: 90px;
+    text-align: center;
+}
+
+$cyan: #0fe0f5;
+$dark: rgb(81, 159, 155);
+$borderW: 6px;
+
+.blob-btn {
+    $numOfBlobs: 4;
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $cyan;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: $borderW solid $cyan;
+    }
+
+    &:after {
+        content: "";
+        z-index: -2;
+        position: absolute;
+        left: $borderW*1.5;
+        top: $borderW*1.5;
+        width: 100%;
+        height: 100%;
+        border: $borderW solid $dark;
+        transition: all 0.3s 0.2s;
+    }
+
+    &:hover {
+        color: $dark;
+
+        &:after {
+            transition: all 0.3s;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__inner {
+        z-index: -1;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    // additional container created, because in FF blobs are breaking overflow:hidden of element with svg gooey filter
+    &__blobs {
+        position: relative;
+        display: block;
+        height: 100%;
+        filter: url('#goo');
+    }
+
+    &__blob {
+        position: absolute;
+        top: $borderW;
+        width: 100% / $numOfBlobs;
+        height: 100%;
+        background: $cyan;
+        border-radius: 100%;
+        transform: translate3d(0, 150%, 0) scale(1.7);
+        transition: transform 0.45s;
+
+        @supports(filter: url('#goo')) {
+            transform: translate3d(0, 150%, 0) scale(1.4);
+        }
+
+        @for $i from 1 through $numOfBlobs {
+            &:nth-child(#{$i}) {
+                left: ($i - 1) * (120% / $numOfBlobs);
+                transition-delay: ($i - 1) * 0.08s;
+            }
+        }
+
+        .blob-btn:hover & {
+            transform: translateZ(0) scale(1.7);
+
+            @supports(filter: url('#goo')) {
+                transform: translateZ(0) scale(1.4);
+            }
+        }
+    }
+
+}
