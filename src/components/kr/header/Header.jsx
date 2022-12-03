@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./header.css";
+import "../../kr/header/header.css";
 import { navKr } from '../../../assets/content_kr';
 
 const Header = () => {

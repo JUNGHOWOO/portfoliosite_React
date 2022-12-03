@@ -178,13 +178,13 @@ export const projectsNav = [
           name: '모두',
       },
       {
-          name: '풀스택',
+          name: '풀',
       },
       {
-          name: '프론트엔드',
+          name: '프론트',
       },
       {
-          name: '백엔드',
+          name: '백',
       },
       {
           name: '기타',
