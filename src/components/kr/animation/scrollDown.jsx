@@ -1,5 +1,5 @@
 import React from 'react';
-import { homeEn } from '../../../assets/content_en';
+import { homeKr } from '../../../assets/content_kr';
 
 const ScrollDown = () => {
     return (
@@ -42,7 +42,7 @@ const ScrollDown = () => {
                 }}
                 ></path>
               </svg>
-              <span className='home__scroll-name'>{homeEn.scrollbtn}</span>
+              <span className='home__scroll-name'>{homeKr.scrollbtn}</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
                 </a>
             </div>

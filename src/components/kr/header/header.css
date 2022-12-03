@@ -34,7 +34,7 @@
 }
 
 .nav__link {
-    font-family: var(--roboto);
+    font-family: var(--ibm);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@
 
 
 .scroll-link {
-    font-family: var(--roboto);
+    font-family: var(--ibm);
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -97,6 +97,7 @@
 .scroll-avtive-link {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    font-size: 18px;
 }
 
 

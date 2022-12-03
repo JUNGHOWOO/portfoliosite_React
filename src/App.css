@@ -1,5 +1,5 @@
 /* 구글 폰트 삽입: Poppins, Nanum Gothic */
-@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&family=Nanum+Gothic:wght@700;800&family=Poppins:wght@400;500;600&family=Roboto+slab:wght@500;600;700;800&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&family=Nanum+Gothic&family=Poppins&family=Gowun+Dodum&family=Roboto+slab&family=IBM+Plex+Sans+KR&&display=swap");
 
 /* CSS style */
 :root {
@@ -9,6 +9,8 @@
     --roboto: Roboto slab;
     --don: Dongle;
     --nanum: Nanum Gothic;
+    --gowun: Gowun Dodum;
+    --ibm : IBM Plex Sans KR;
     
     /* 컬러 설정 */
     /* 컬러 모드 hsl(hue, saturation, lightness) */
@@ -21,7 +23,7 @@
     --container-color: #fff;
 
     /* 글자 폰트 */
-    --body-font: var(--don);
+    --body-font: var(--roboto);
     --big-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;

@@ -34,12 +34,12 @@
 }
 
 .nav__link {
-    font-family: var(--don);
+    font-family: var(--ibm);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
+    font-size: 18px;
     color: hsl(var(--hue), var(--sat), 70%);
     font-weight: var(--font-medium);
     transition: .3s;
@@ -89,14 +89,15 @@
 
 
 .scroll-link {
-    font-family: var(--don);
-    color: var(--title-color);
+    font-family: var(--ibm);
+    color: hsl(var(--hue), var(--sat), 70%);
     font-weight: var(--font-medium);
 }
 
 .scroll-avtive-link {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    font-size: 18px;
 }
 
 
@@ -119,7 +120,7 @@
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+        box-shadow: 0 -3px 4px rgba(255, 255, 255, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }

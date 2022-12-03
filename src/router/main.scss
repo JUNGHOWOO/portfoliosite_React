@@ -13,7 +13,7 @@ $config: (
     animated: false,
     nb-letters: 16,
     animation-length: 6s,
-    mask-letters: ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
+    mask-letters: ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j")
 );
 
 // ----------------------------------
@@ -70,16 +70,15 @@ $config: (
 }
 
 // ----------------------------------
-/* body {
+body {
     text-align: center;
-    background-color: rgb(126, 111, 111);
-} */
+    background-color: black;
+}
 
 .wrapper {
     position: absolute;
     top: 7%;
     left: 50%;
-    bottom: 8%;
     width: 100%;
     font-size: 16px;
     transform: translate(-50%);
@@ -110,7 +109,7 @@ $config: (
         left: 0;
         width: 100%;
         word-break: break-all;
-        background-color: color(background);
+        background-color: gray;
     }
 }
 
@@ -183,6 +182,7 @@ $config: (
 
 .wrapper .footer {
     height: 30px;
+    margin-bottom: 0;
 }
 
 
@@ -294,7 +294,7 @@ $config: (
 $openSans: 'Open Sans', Helvetica, Arial, sans-serif;
 
 body {
-    background: #333;
+    background: rgb(0, 0, 0);
     font-family: $openSans;
 }
 

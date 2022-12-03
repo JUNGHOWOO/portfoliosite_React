@@ -119,11 +119,10 @@ const Main = () => {
                             <Route path="/kr" component={Korea} exact={true}><Korea /></Route>
                         </div>
                     </div>
-
                 </div>
                 <div className="footer"></div>
             </div>
-
+            
         </>
     )
 }
