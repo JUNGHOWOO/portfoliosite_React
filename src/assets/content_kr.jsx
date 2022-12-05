@@ -151,13 +151,13 @@ export const projectsData = [
         id: 3,
         image: Work3,
         title: "에어비앤비 데이터베이스 리버스 엔지니어링",
-        category: "백엔드",
+        category: "백",
       },
       {
         id: 4,
         image: Work4,
         title: "사내 요청 관리 시스템",
-        category: "풀스택",
+        category: "풀",
       },
       {
         id: 5,
@@ -169,7 +169,7 @@ export const projectsData = [
           id: 6,
           image: Work6,
           title: "포트폴리오 사이트",
-          category: "프론트엔드",
+          category: "프론트",
         },
     ];
   
