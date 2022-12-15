@@ -7,7 +7,7 @@ import Skills from '../components/kr/skills/Skills';
 import Experience from '../components/kr/experience/Experience';
 import Timeline from '../components/kr/timeline/Timeline';
 import Portfolio from '../components/kr/work/Work';
-/* import Etc from '../components/kr/etc/Etc'; */
+import Etc from '../components/kr/etc/Etc';
 import Contact from '../components/kr/contact/Contact';
 import Footer from '../components/kr/footer/Footer';
 import ScrollUp from '../components/kr/scrollup/ScrollUp';
@@ -26,7 +26,7 @@ const Korea = () => {
                         <Skills />
                         <Portfolio />
                         <Experience />
-                        {/* <Etc /> */}
+                        <Etc />
                         <Contact />
                         </main>
                     <Footer />

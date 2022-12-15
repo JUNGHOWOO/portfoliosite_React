@@ -63,7 +63,7 @@ const Experience = () => {
                     <div className={toggleState === 2 ? "experience__modal active-modal" : "experience__modal"}>
                         <div className="experience__modal-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times experience__modal-close"></i>
-                            <h3 className="experience__modal-title">{experienceKr.modaltitle}</h3>
+                            <h3 className="experience__modal-title">{experienceKr.modaltitle2}</h3>
                             <p className="experience__modal-description">
                             {experienceKr.modaldescription2}
                             </p>

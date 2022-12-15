@@ -6,22 +6,22 @@ export const Data = [
     {
       id: 1,
       image: Image1,
-      title: "Jhon Doe",
+      title: "여행",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "저는 여행을 좋아합니다.",
     },
     {
       id: 2,
       image: Image2,
-      title: "Harry Clinton",
+      title: "운동",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "헬스, 배드민턴 등의 운동을 즐겨합니다.",
     },
     {
       id: 3,
       image: Image3,
-      title: "Sara Cill",
+      title: "사진",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "휴일에 사진 찍으러 다니는 것에 관심이 있습니다.",
     },
   ];

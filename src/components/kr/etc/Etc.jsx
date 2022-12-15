@@ -16,8 +16,8 @@ const Etc = () => {
     
     return (
         <section className="etc container section" id="etc">
-            <h2 className="section__title">Etc</h2>
-            <span className="section__subtitle">abcd</span>
+            <h2 className="section__title">취미</h2>
+            <span className="section__subtitle">나의 관심사</span>
 
             <Swiper className="etc__container"
             loop={true}
