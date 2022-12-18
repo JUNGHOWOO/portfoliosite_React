@@ -114,7 +114,6 @@ const Main = () => {
                             </defs>
                         </svg>
                         <div class="svg-wrapper">
-
                             <Route path="/en" component={English} exact={true}><English /></Route>
                             <Route path="/kr" component={Korea} exact={true}><Korea /></Route>
                         </div>

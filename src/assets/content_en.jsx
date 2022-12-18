@@ -16,7 +16,7 @@ export const navEn =
       menu4: "Skills",
       menu5: "Portfolio",
       menu6: "Experience",
-      menu7: "Etc",
+      menu7: "Hobby",
       menu8: "Contact",
     }
 

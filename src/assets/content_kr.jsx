@@ -16,7 +16,7 @@ export const navKr =
       menu4: "스킬",
       menu5: "포트폴리오",
       menu6: "경험",
-      menu7: "기타",
+      menu7: "취미",
       menu8: "연락",
     }
 
