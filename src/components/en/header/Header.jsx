@@ -8,18 +8,18 @@ const Header = () => {
         const header = this.document.querySelector(".header");
         const logo = this.document.querySelector(".nav__logo");
         const link = this.document.querySelector(".nav__link");
-        const active = this.document.querySelector(".avtice-link");
+        const active = this.document.querySelector(".active-link");
         /* when the scroll is higher than 2000 viewport height, add the show scroll-header to a tag withe the header tag  */
         if (this.scrollY >= 672) {
             header.classList.add("scroll-header");
             logo.classList.add("scroll-logo");
             link.classList.add("scroll-link");
-            link.classList.add("scroll-avtice-link");
+            active.classList.add("scroll-active-link");
         } else {
             header.classList.remove("scroll-header");
             logo.classList.remove("scroll-logo");
             link.classList.remove("scroll-link");
-            link.classList.remove("scroll-avtice-link");
+            active.classList.remove("scroll-active-link");
         }
     })
     /* Toggle menu */
@@ -67,12 +67,12 @@ const Header = () => {
                                 <i className="uil uil-briefcase nav__icon"></i> {navEn.menu6}
                             </a>
                         </li>
-
+{/* 
                         <li className="nav__item">
                             <a href="#etc" onClick={() => setActiveNav("#etc")} className={activeNav === "#etc" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-scenery nav__icon"></i> {navEn.menu7}
                             </a>
-                        </li>
+                        </li> */}
 
                         <li className="nav__item">
                             <a href="#contact" onClick={() => setActiveNav("#contact")} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>

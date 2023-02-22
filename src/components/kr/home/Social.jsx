@@ -3,7 +3,7 @@ import React from 'react';
 const Social = () => {
     return (
         <div className="home__social">
-            <a href="https://www.instagram.com/99wo_ow/" 
+            <a href="https://www.instagram.com/wo_ow.jungho/" 
             className="home__social-icon" target="_blank">
                 <i class = "uil uil-instagram-alt"></i>
             </a>

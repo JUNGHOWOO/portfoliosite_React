@@ -1,6 +1,6 @@
 import React from "react";
 import "./profile.css";
-import ProfileImg from "../../../assets/about.jpg";
+import ProfileImg from "../../../assets/about2.jpg";
 import CV from "../../../assets/JUNGHOWOO_CV.pdf";
 import Info from "./Info.jsx";
 import { profileKr } from '../../../assets/content_kr';

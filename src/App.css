@@ -183,11 +183,6 @@ img {
     transition-property: box-shadow;
   }
   
-  .button--flex:hover, 
-  .button--flex:focus, 
-  .button--flex:active {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  }
 
 /* breakpoints */
 /* for large devices */

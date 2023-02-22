@@ -35,7 +35,7 @@
 }
 
 .skills__data {
-    display: flex;
+    display: inline-block;
     column-gap: 0.5rem;
 }
 

@@ -22,7 +22,7 @@ const Footer = () => {
                     <a href="https://www.facebook.com/profile.php?id=100004434285176" className="footer__social-link" target="_blank">
                         <i class = "bx bxl-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/99wo_ow/" className="footer__social-link" target="_blank">
+                    <a href="https://www.instagram.com/wo_ow.jungho/" className="footer__social-link" target="_blank">
                         <i class = "bx bxl-instagram"></i>
                     </a>
                     <a href="https://github.com/JUNGHOWOO" className="footer__social-link" target="_blank">

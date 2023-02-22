@@ -39,9 +39,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 16px;
     color: hsl(var(--hue), var(--sat), 70%);
     font-weight: var(--font-medium);
+    font-size: 13px;
     transition: .3s;
 }
 
@@ -89,7 +89,7 @@
 
 
 .scroll-link {
-    font-family: var(--i);
+    font-family: var(--ibm);
     color: hsl(var(--hue), var(--sat), 70%);
     font-weight: var(--font-medium);
 }

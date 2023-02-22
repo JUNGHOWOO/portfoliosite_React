@@ -7,7 +7,7 @@ import Skills from '../components/en/skills/Skills';
 import Experience from '../components/en/experience/Experience';
 import Timeline from '../components/en/timeline/Timeline';
 import Portfolio from '../components/en/work/Work';
-import Etc from '../components/en/etc/Etc';
+/* import Etc from '../components/en/etc/Etc'; */
 import Contact from '../components/en/contact/Contact';
 import Footer from '../components/en/footer/Footer';
 import ScrollUp from '../components/en/scrollup/ScrollUp';
@@ -26,7 +26,7 @@ const English = () => {
                         <Skills />
                         <Portfolio />
                         <Experience />
-                        <Etc />
+                        {/* <Etc /> */}
                         <Contact />
                         </main>
                     <Footer />

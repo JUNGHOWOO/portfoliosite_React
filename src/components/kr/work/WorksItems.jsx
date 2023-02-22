@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { portfolioKr } from '../../../assets/content_kr';
-import "../experience/experience.css";
+import "../work/work.css";
 
 const WorksItems = ({ item }) => {
     const [toggleState, setToggleState] = useState(0);
@@ -13,34 +13,46 @@ const WorksItems = ({ item }) => {
             <img src={item.image} alt="" className="work__img" />
             <h3 className="work__title">{item.title}</h3>
 
-            <span href="#" className="work__button" onClick={() => toggleTab(1)}>{portfolioKr.button}
-                <i className="uil uil-arrow-right experience__button-icon"></i></span>
-            <div className={toggleState === 1 ? "experience__modal active-modal" : "experience__modal"}>
-                <div className="experience__modal-content">
-                    <i onClick={() => toggleTab(0)} className="uil uil-times experience__modal-close"></i>
-                    <h3 className="experience__modal-title">프로젝트 설명</h3>
-                    <p className="experience__modal-description">프로젝트 자세한 설명</p>
-                    <ul className="experience__modal-experience grid">
-                        <table class="table" border={1}>
-                            <th>
-                                <tr>프로젝트 제목</tr>
-                                <tr>프로젝트 내용</tr>
-                                <tr>개발 환경</tr>
-                                <tr>개발 언어</tr>
-                                <tr>작업 인원</tr>
-                                <tr>비고</tr>
-                                <tr>파일</tr>
-                            </th>
-                            <th>
-                                <tr>1</tr>
-                                <tr>1</tr>
-                                <tr>1</tr>
-                                <tr>1</tr>
-                                <tr>1</tr>
-                                <tr>1</tr>
-                                <tr><input id='filename' type="button" onclick="javascript:location.href=''" value="다운로드"></input></tr>
-                            </th>
+            <span className="work__button" onClick={() => toggleTab(1)}>{portfolioKr.button}
+                <i className="uil uil-arrow-right work__button-icon"></i></span>
+            <div className={toggleState === 1 ? "work__modal active-modal" : "work__modal"}>
+                <div className="work__modal-content">
+                    <i onClick={() => toggleTab(0)} className="uil uil-times work__modal-close"></i>
+                    <ul className="work__modal-work grid">
+                        <table class="table" border="1" bordercolor="gray">
+                            <tr>
+                                <td width="100">{item.project}</td>
+                                <td align="left">{item.projectname}</td>
+                            </tr>
+                            <tr>
+                                <td width="100">{item.summarytitle}</td>
+                                <td align="left">{item.summary}</td>
+                            </tr>
+                            <tr>
+                                <td width="100">{item.content}</td>
+                                <td align="left">{item.majorcontent}</td>
+                            </tr>
+                            <tr>
+                                <td width="100">{item.per}</td>
+                                <td align="left">{item.person}</td>
+                            </tr>
+                            <tr>
+                                <td width="100">{item.time}</td>
+                                <td align="left">{item.usetime}</td>
+                            </tr>
+                            <tr>
+                                <td width="100">{item.env}</td>
+                                <td align="left">{item.environment}</td>
+                            </tr>
+                            <tr>
+                                <td width="100">{item.lang}</td>
+                                <td align="left">{item.language}</td>
+                            </tr>
                         </table>
+                        <a download="" href={item.file} className="button button--flex"><span>
+                            {item.button}&nbsp;&nbsp;<i class="bx bxs-note bx-flip-horizontal bx-tada"></i>
+                        </span>
+                        </a>
                     </ul>
                 </div>
             </div>
