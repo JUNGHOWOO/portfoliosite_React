@@ -132,7 +132,7 @@
     font-size: var(--small-font-size);
 }
 
-.button {
+.project_button {
     display: inline-block;
     background-color: var(--title-color);
     color: var(--container-color);
@@ -175,12 +175,30 @@
     .work__title {
         margin-bottom: 0.25rem;
     }
+
+    .work__modal-content {
+        width: 1000px;
+        position: relative;
+        background-color: var(--container-color);
+        padding: 4.5rem 2.5rem 2.5rem;
+        border-radius: 1.5rem;
+        font-size: 15px;
+    }
 }
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
     .work__container {
         grid-template-columns: max-content;
+    }
+
+    .work__modal-content {
+        width: 1000px;
+        position: relative;
+        background-color: var(--container-color);
+        padding: 4.5rem 2.5rem 2.5rem;
+        border-radius: 1.5rem;
+        font-size: 13px;
     }
 }
 
@@ -191,6 +209,15 @@
 
     .work__img {
         width: 100%;
+    }
+
+    .work__modal-content {
+        width: 1000px;
+        position: relative;
+        background-color: var(--container-color);
+        padding: 4.5rem 2.5rem 2.5rem;
+        border-radius: 1.5rem;
+        font-size: 8px;
     }
 }
 

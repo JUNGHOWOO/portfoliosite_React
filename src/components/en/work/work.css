@@ -62,8 +62,6 @@
     transform: translateX(0.25rem);
 }
 
-
-
 /* active work */
 .active-work {
     background-color: var(--title-color);
@@ -116,5 +114,4 @@
     .work__filters {
         column-gap: 0.25rem;
     }
-
 }

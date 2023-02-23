@@ -383,7 +383,7 @@ export const contactKr =
   data1: "이메일로 연락",
   title2: "Whatsapp",
   data2: "휴대폰으로 연락",
-  title3: "메싡저",
+  title3: "메신저",
   data3: "메신저로 연락",
 
   _title2: "Gmail 보내기",

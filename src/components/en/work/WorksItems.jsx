@@ -48,7 +48,7 @@ const WorksItems = ({ item }) => {
                                 <td align="left">{item.language}</td>
                             </tr>
                         </table>
-                        <a download="" href={item.file} className="button button--flex"><span>
+                        <a download="" href={item.file} className="button project_button"><span>
                             {item.button}&nbsp;&nbsp;<i class="bx bxs-note bx-flip-horizontal bx-tada"></i>
                         </span>
                         </a>
